@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/telegraf");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.example::-webkit-scrollbar {
+  display: none;
+}
+.slideani {
+  animation-name: anim;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes anim {
+  0% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.slideani2 {
+  animation-name: anim2;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes anim2 {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(10%);
+  }
+}
+.slideanihero {
+  animation-name: anim3;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+@keyframes anim3 {
+  0% {
+    transform: translateX(10%);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* styling for multiple tags input */
+.ReactTags__tags.react-tags-wrapper {
+  width: 100%;
+  display: flex;
+  height: 100%;
+}
+.ReactTags__tagInput {
+  width: 100%;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 0 6px 6px 0;
+}
+.ReactTags__tagInputField {
+  width: 100%;
+  padding-right: 16px;
+  background: transparent;
+  outline: none;
+  font-family: Inter;
+  font-size: 14.946px;
+  font-weight: 400;
+
+  @media (max-width: 640px) {
+    height: 47px;
+  }
+}
+
+/* hiding the react tag input */
+.ReactTags__selected {
+  display: none;
+}
+
+/* yash swiper styling start */
+.swiper-button-next::after {
+  content: "" !important ;
+}
+.swiper-button-prev::after {
+  content: "" !important;
+}
+/* yash swiper styling end */
+/* Swiper.module.css */
+.swiper-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+
+  display: flex;
+  transition-property: transform;
+  transition-timing-function: var(
+    --swiper-wrapper-transition-timing-function,
+    initial
+  );
+  box-sizing: content-box;
+  display: flex;
+  align-items: center;
+}
